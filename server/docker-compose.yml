@@ -4,11 +4,12 @@ services:
     build:
       context: .
       args:
-        NODE_AUTH_TOKEN:
+        NODE_AUTH_TOKEN: ${NODE_AUTH_TOKEN}
     env_file: ./.env.local
     environment:
       PORT: 8000
       DB_CONNECT: mongodb://mongo:27017/coinspace
+      API_KEY: ${API_KEY}
     ports:
       - 8000:8000
     links:
