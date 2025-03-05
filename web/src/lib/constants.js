@@ -13,6 +13,7 @@ export const EVM_FAMILY = [
   'ethereum-classic',
   'polygon',
   'avalanche-c-chain',
+  'daily',
   'binance-smart-chain',
   'arbitrum',
   'optimism',
@@ -37,6 +38,7 @@ export const SUPPORTED_PLATFORMS = [
 export const TOKEN_PLATFORMS = [
   'arbitrum',
   'avalanche-c-chain',
+  'daily',
   'base',
   'binance-smart-chain',
   'ethereum',
@@ -111,6 +113,8 @@ export function getApiNode(platform, isOnion) {
       return isOnion ? import.meta.env.VITE_API_POLYGON_URL_TOR : import.meta.env.VITE_API_POLYGON_URL;
     case 'avalanche-c-chain':
       return isOnion ? import.meta.env.VITE_API_AVAX_URL_TOR : import.meta.env.VITE_API_AVAX_URL;
+    case 'daily':
+      return isOnion ? import.meta.env.VITE_API_DLY_URL_TOR : import.meta.env.VITE_API_DLY_URL;
     case 'arbitrum':
       return isOnion ? import.meta.env.VITE_API_ARB_URL_TOR : import.meta.env.VITE_API_ARB_URL;
     case 'optimism':

@@ -5,6 +5,7 @@ import binanceSmartChain from '@coinspace/crypto-db/crypto/binance-coin@binance-
 import bitcoin from '@coinspace/crypto-db/crypto/bitcoin@bitcoin.json';
 import bitcoinCash from '@coinspace/crypto-db/crypto/bitcoin-cash@bitcoin-cash.json';
 import cardano from '@coinspace/crypto-db/crypto/cardano@cardano.json';
+import daily from '@coinspace/crypto-db/crypto/avalanche@avalanche-c-chain.json';
 import dash from '@coinspace/crypto-db/crypto/dash@dash.json';
 import dogecoin from '@coinspace/crypto-db/crypto/dogecoin@dogecoin.json';
 import eos from '@coinspace/crypto-db/crypto/eos@eos.json';
@@ -24,14 +25,15 @@ import tron from '@coinspace/crypto-db/crypto/tron@tron.json';
 import xrp from '@coinspace/crypto-db/crypto/xrp@ripple.json';
 
 export default [
-  arbitrum,
+  /*arbitrum,
   avalanche,
   base,
   binanceSmartChain,
   bitcoin,
   bitcoinCash,
-  cardano,
-  dash,
+  cardano,*/
+  daily,
+  /*dash,
   dogecoin,
   eos,
   ethereum,
@@ -47,5 +49,5 @@ export default [
   tether,
   toncoin,
   tron,
-  xrp,
+  xrp,*/
 ];
