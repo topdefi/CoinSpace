@@ -5,7 +5,7 @@ import CsFormGroup from '../../../components/CsForm/CsFormGroup.vue';
 import CsStep from '../../../components/CsStep.vue';
 import MainLayout from '../../../layouts/MainLayout.vue';
 
-import * as EvmErrors from '@coinspace/cs-evm-wallet/errors';
+import * as EvmErrors from 'cs-evm-wallet/errors';
 
 import { cryptoSubtitle } from '../../../lib/helpers.js';
 

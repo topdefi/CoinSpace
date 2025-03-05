@@ -75,7 +75,7 @@ export async function loadWalletModule(platform) {
     return (await import('@coinspace/cs-eos-wallet')).default;
   }
   if (EVM_FAMILY.includes(platform)) {
-    return (await import('@coinspace/cs-evm-wallet')).default;
+    return (await import('cs-evm-wallet')).default;
   }
   if (['toncoin'].includes(platform)) {
     return (await import('@coinspace/cs-toncoin-wallet')).default;
